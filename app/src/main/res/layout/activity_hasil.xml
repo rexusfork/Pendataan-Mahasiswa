@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHasil">
+
+    <TextView
+        android:id="@+id/TitleLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Siswa"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background1">
+
+        <TextView
+            android:id="@+id/YourNISHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Your NIS Here"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/YourNameHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Your Name Here"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/YourIDClassHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Your ID Class Here"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/YourGenderHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Your Gender Here"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/YourBirthDateHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="30dp"
+            android:text="Your Birth Date Here"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BackData"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kembali"
+        android:textStyle="bold"
+        android:background="@drawable/customedtext">
+    </Button>
+</LinearLayout>

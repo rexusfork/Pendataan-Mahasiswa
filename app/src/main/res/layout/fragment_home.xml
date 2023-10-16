@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/BtnLogOut"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_logout_24"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Siswa"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EdTextNIS"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/customedtext"
+                android:hint="Masukan Nomor Induk Siswa"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EdTextNama"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/customedtext"
+                android:hint="Masukan Nama"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EdTextKelas"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/customedtext"
+                android:hint="Masukan ID Kelas"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </EditText>
+
+            <TextView
+                android:id="@+id/GenderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/customedtext"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Laki Laki"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Perempuan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/BirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/customedtext"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="Tanggal Lahir"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </Button>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SaveData"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Simpan"
+            android:textStyle="bold"
+            android:background="@drawable/customedtext">
+        </Button>
+    </LinearLayout>
+</FrameLayout>
